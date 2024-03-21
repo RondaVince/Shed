@@ -1,0 +1,129 @@
+*{
+   margin: 0; 
+   padding: 0;
+
+   
+}
+
+.content{
+    text-align:center
+
+
+}
+
+
+
+h1{
+
+    color: #fff;
+    font-size: large;
+    text-align: center;
+    font-family: Arial, sans-serif; 
+    padding: 100px; 
+}
+
+.back-video{
+    width: 100%;
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.btn{
+    border: none;
+    margin: 20px;
+    padding: 10px;
+    width: 220px;
+    font-family: Arial;
+    font-size:medium;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    background-size: 200%;
+    transition: 0.6s;
+
+}
+.schedule P{
+    font-size: 20px;
+    color: #fff;
+    display: inline block;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: linear-gradient(to left,#EA2027,#EE5A24,);
+}
+.btn1{
+    background-image: linear-gradient(to left,#FFC312,#EE5A24,#FFC312);
+}
+.btn2{
+    background-image: linear-gradient(to left,#C4E538,#009432,#C4E538);
+}
+.btn3{
+    background-image: linear-gradient(to left,#12cbc4,#F79F1F,#12cbc4);
+}
+.btn4{
+    background-image: linear-gradient(to left,#C4E538,#ee5a24,#C4E538);
+}
+.btn5{
+    background-image: linear-gradient(to left,#A3CB38,#0652DD,#A3CB38);
+}
+
+.btn:hover{
+    background-position: right;
+}
+
+@media (max-width: 480px) {
+    /* Adjust styles for screens up to 480px wide (cellphone screens) */
+    .content h1 {
+        font-size: 8vw; /* Adjusted font-size for smaller screens */
+
+        @media (min-aspect-ratio: 16/9){
+            .back-video{
+                width: 100%;
+                height: auto;
+            }
+        }
+        @media (max-aspect-ratio: 16/9){
+            .back-video{
+                width: auto;
+                height: 100%;
+            }
+        }
+        @media screen and (max-width:770px){
+            .content h1{
+                font-size: 44px;
+            }
+    }
+
+    .btn {
+        width: 80%; /* Adjusted width for smaller screens */
+        font-size: 4vw; /* Adjusted font-size for smaller screens */
+        padding: 16px;
+    }
+
+    .schedule h2 {
+        width: 80%; /* Adjusted width for smaller screens */
+        font-size: 5vw; /* Adjusted font-size for smaller screens */
+    }
+
+    .schedule p {
+        font-size: 4vw; /* Adjusted font-size for smaller screens */
+    }
+
+    .Background {
+        height: 40vh;
+    }
+    }
+    
+}
