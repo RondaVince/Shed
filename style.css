@@ -87,6 +87,7 @@ h1{
     /* Adjust styles for screens up to 480px wide (cellphone screens) */
     .content h1 {
         font-size: 8vw; /* Adjusted font-size for smaller screens */
+    }
 
         @media (min-aspect-ratio: 16/9){
             .back-video{
